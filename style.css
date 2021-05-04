@@ -4,14 +4,14 @@
 .dropdown-toggle::after {
   display: none !important;
 }
-.custom-icon {
+/* .custom-icon {
   
-}
+} */
 .custom-icon:active {
     color: #00acc1 !important;
   }
 .custom-icon:hover {
-  color: #00acc1 !important;
+  color: #74a8af !important;
 }
 .active{
     color: #00acc1 !important;

@@ -1,6 +1,32 @@
-.custom-nav{
-    box-shadow: -1px 4px 10px 0px rgba(0,0,0,0.3);
+.custom-nav {
+  box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
-.dropdown-toggle::after{
-    display: none !important;
+.dropdown-toggle::after {
+  display: none !important;
+}
+.custom-icon {
+  
+}
+.custom-icon:active {
+    color: #00acc1 !important;
+  }
+.custom-icon:hover {
+  color: #00acc1 !important;
+}
+.active{
+    color: #00acc1 !important;
+}
+.dropdown-item:active {
+  background-color: #dbdbdb;
+  color: #000000;
+}
+.navbar-nav{
+    flex-direction: row !important;
+}
+.navbar-nav .nav-link{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.form-control{
+    border-radius: .9rem;
 }

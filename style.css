@@ -30,3 +30,9 @@
 .form-control{
     border-radius: .9rem;
 }
+.logo-img{
+  width: 45px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 1px 5px 9px 6px rgba(0,0,0,0.09);
+}

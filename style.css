@@ -98,6 +98,10 @@ body{
 .detail-pg p{
   text-align: center;
 }
+/*Notification*/
+/* .side-bar{
+  border: #000000 solid 3px;
+} */
 @media only screen and (max-width: 950px) {
   .banner .content h1 {
     margin: 0;

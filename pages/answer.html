@@ -30,7 +30,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item custom-icon">
-                        <a class="nav-link" aria-current="page" href="../index.html"><i class="fas fa-home fa-2x"></i></a>
+                        <a class="nav-link" aria-current="page" href="../index.html"><i
+                                class="fas fa-home fa-2x"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-icon active" href="answer.html"><i class="fas fa-edit fa-2x"></i></a>
@@ -56,15 +57,40 @@
                     <button class="btn btn-outline-secondary" type="submit">Search</button>
                 </form>
                 <div class="px-2 mx-2 py-1 my-1">
-                    <a href="login.html"><button type="button" class="btn btn-outline-dark btn-sm"><b>Log in</b></button></a>
-                    <a href="signup.html"><button type="button" class="btn btn-danger btn-sm"><b>Sign up</b></button></a>
+                    <a href="login.html"><button type="button" class="btn btn-outline-dark btn-sm"><b>Log
+                                in</b></button></a>
+                    <a href="signup.html"><button type="button" class="btn btn-danger btn-sm"><b>Sign
+                                up</b></button></a>
                 </div>
             </div>
         </div>
     </nav>
     <!--Navbar End-->
 
-    
+    <!--Answer-->
+    <div class="m-5">
+        <textarea class="form-control" placeholder="Title"
+            style="height: 50px"></textarea>
+    </div>
+
+    <div class="form-floating m-5">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+            style="height: 150px"></textarea>
+        <label for="floatingTextarea2">Description</label>
+        <br>
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Include file</label>
+            <input class="form-control" type="file" id="formFile">
+        </div>
+        <div class="m-5" style="display: inline;">
+            <textarea class="form-control" placeholder="Tags"
+                style="height: 50px; width: 50%;"></textarea>
+        </div>
+        <button type="button" class="btn btn-secondary btn-custom">Post</button>
+    </div>
+    <!--Answer End-->
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -83,6 +109,3 @@
 </body>
 
 </html>
-
-
-

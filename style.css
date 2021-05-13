@@ -44,7 +44,10 @@ body{
 .custom-button{
   
 }
-
+.btn-custom{
+  position: absolute; 
+  right: 0;
+}
 /* Video Banner */
 .banner {
   width: 100%;
@@ -121,5 +124,11 @@ body{
     margin: 0;
     padding: 0;
     font-size: 1.8em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .answer-post{
+    margin: 7px !important;
+    padding: 7px !important;
   }
 }

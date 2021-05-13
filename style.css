@@ -1,3 +1,8 @@
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+
 .custom-nav {
   box-shadow: -1px 4px 10px 0px rgba(0, 0, 0, 0.3);
 }
@@ -35,4 +40,86 @@
   height: auto;
   border-radius: 12px;
   box-shadow: 1px 5px 9px 6px rgba(0,0,0,0.09);
+}
+.custom-button{
+  
+}
+
+/* Video Banner */
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* iframe {
+  width: 100%;
+  height: calc((100vw * 9) / 16);
+} */
+.banner-video {
+  height: 100vh;
+  overflow: hidden;
+}
+.banner video {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  filter: brightness(95%);
+}
+.banner .content {
+  position: relative;
+  z-index: 1;
+  max-width: 70.5rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+.banner .content h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 7.0em;
+  line-height: 95%;
+}
+.banner .content p {
+  font-size: 1.5em;
+}
+
+/* Detail + Feature + Areas + Forms + Partnership + Footer */
+.detail-pg{
+  padding: 7%;
+}
+.detail-pg h1{
+  text-align: center;
+}
+.detail-pg p{
+  text-align: center;
+}
+/*Notification*/
+/* .side-bar{
+  border: #000000 solid 3px;
+} */
+@media only screen and (max-width: 950px) {
+  .banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5.0em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3.0em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .banner .content h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8em;
+  }
 }

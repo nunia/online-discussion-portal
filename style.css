@@ -105,6 +105,9 @@ body{
 /* .side-bar{
   border: #000000 solid 3px;
 } */
+.profile-custom{
+  
+}
 @media only screen and (max-width: 950px) {
   .banner .content h1 {
     margin: 0;

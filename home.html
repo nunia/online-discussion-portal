@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="assets/images/eC.png" style="width: 4px; height: auto;" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+  <!-- Font Awesome -->
+  <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet" />
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet" />
+
+  <title>Online Discussion Portal</title>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav" style="background-color: #e3f2fd">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html"><img class="logo-img" src="./assets/images/eCfill2.png" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item custom-icon">
+            <a class="nav-link active" aria-current="page" href="home.html"><i class="fas fa-home fa-2x"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-icon" href="pages/profile.html"><i class="fas fa-user-circle fa-2x"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-icon" href="pages/answer.html"><i class="fas fa-edit fa-2x"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-icon" href="pages/inbox.html"><i class="fas fa-comment-dots fa-2x"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link custom-icon" href="pages/notification.html"><i class="fas fa-bell fa-2x"></i></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fas fa-caret-down fa-2x"></i>
+            </a>
+            <ul class="dropdown-menu custom-icon" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item custom-icon" href="pages/about.html">About us</a>
+              </li>
+              <li>
+                <a class="dropdown-item custom-icon" href="pages/trending.html">Trending</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        
+        <div class="px-2 mx-2 py-1 my-1">
+          <div class="nav-item dropdown">
+           <a class="nav-link dropdown-toggle custom-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+             aria-expanded="false">
+             <i class="far fa-user-circle fa-2x" style="color: #757373;"></i>
+           </a>
+           <ul class="dropdown-menu custom-icon" aria-labelledby="navbarDropdown">
+             <li>
+               <a class="dropdown-item custom-icon" href="pages/login.html">Log out</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-secondary" type="submit">
+            Search
+          </button>
+        </form>
+        
+      </div>
+    </div>
+  </nav>
+  <!--Navbar End-->
+
+  <!--Main Content-->
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+  <div class="container bootdey">
+    <div class="col-md-12 bootstrap snippets">
+      <div class="panel">
+        <div class="panel-body">
+          <textarea class="form-control" rows="2" placeholder="Answer"></textarea>
+          <div class="mar-top clearfix">
+            <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i>
+              Answer</button>
+            <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#"></a>
+            <a class="btn btn-trans btn-icon fa fa-camera add-tooltip" href="#"></a>
+            <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#"></a>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-body">
+          <!-- Newsfeed Content -->
+          <!--===================================================-->
+          <div class="media-block">
+            <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+            <div class="media-body">
+              <div class="mar-btm">
+                <a href="#" class="btn-link text-semibold media-heading box-inline">Elon Musk</a>
+                <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i> - From Mobile - 11 min ago</p>
+              </div>
+              <p>Make humanity a multiplanet species!</p>
+              <div class="pad-ver">
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+                  <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+                </div>
+                <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+              </div>
+              <hr>
+
+              <!-- Comments -->
+              <div>
+                <div class="media-block">
+                  <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
+                      src="https://bootdey.com/img/Content/avatar/avatar2.png"></a>
+                  <div class="media-body">
+                    <div class="mar-btm">
+                      <a href="#" class="btn-link text-semibold media-heading box-inline">Bobby Marz</a>
+                      <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i> - From Mobile - 7 min ago</p>
+                    </div>
+                    <p>And let's make Doge and interplanetary currency! It's the future!!! Rocket #doge #dogecoin
+                      #dogefam #crypto</p>
+                    <div class="pad-ver">
+                      <div class="btn-group">
+                        <a class="btn btn-sm btn-default btn-hover-success active" href="#"><i
+                            class="fa fa-thumbs-up"></i> You Like it</a>
+                        <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i
+                            class="fa fa-thumbs-down"></i></a>
+                      </div>
+                      <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="media-block">
+                  <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
+                      src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                  </a>
+                  <div class="media-body">
+                    <div class="mar-btm">
+                      <a href="#" class="btn-link text-semibold media-heading box-inline">Lucy Moon</a>
+                      <p class="text-muted text-sm"><i class="fa fa-globe fa-lg"></i> - From Web - 2 min ago</p>
+                    </div>
+                    <p>It’s all making sense now...
+                      SpaceX to get us there.
+                      Starlink to communicate with earth.
+                      Tesla to drive us around (no oil).
+                      Boring company for underground habitats, and protection from radiation
+                      Crypto currency will be the local monetary system and exchange with earth</p>
+                    <div class="pad-ver">
+                      <div class="btn-group">
+                        <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+                        <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i
+                            class="fa fa-thumbs-down"></i></a>
+                      </div>
+                      <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+                    </div>
+                    <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--===================================================-->
+          <!-- End Newsfeed Content -->
+
+
+          <!-- Newsfeed Content -->
+          <!--===================================================-->
+          <div class="media-block pad-all">
+            <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
+                src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
+            <div class="media-body">
+              <div class="mar-btm">
+                <a href="#" class="btn-link text-semibold media-heading box-inline">BlockFilio</a>
+                <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i> - From Mobile - 11 min ago</p>
+              </div>
+              <p>Ethereum is now worth more than JP Morgan Chase.</p>
+              <img class="img-responsive thumbnail" src="https://via.placeholder.com/400x300" alt="Image">
+              <div class="pad-ver">
+                <span class="tag tag-sm"><i class="fa fa-heart text-danger"></i> 250 Likes</span>
+                <div class="btn-group">
+                  <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+                  <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+                </div>
+                <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+              </div>
+              <hr>
+
+              <!-- Comments -->
+              <div>
+                <div class="media-block pad-all">
+                  <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
+                      src="https://bootdey.com/img/Content/avatar/avatar2.png"></a>
+                  <div class="media-body">
+                    <div class="mar-btm">
+                      <a href="#" class="btn-link text-semibold media-heading box-inline">Maria Leanz</a>
+                      <p class="text-muted text-sm"><i class="fa fa-globe fa-lg"></i> - From Web - 2 min ago</p>
+                    </div>
+                    <p>First they ignore you, then they laugh at you, then they fight you, then you win.
+
+                      I think this means you've won now</p>
+                    <div>
+                      <div class="btn-group">
+                        <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+                        <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i
+                            class="fa fa-thumbs-down"></i></a>
+                      </div>
+                      <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <style>
+            .img-sm {
+              width: 46px;
+              height: 46px;
+            }
+
+            .panel {
+              box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075);
+              border-radius: 0;
+              border: 0;
+              margin-bottom: 15px;
+            }
+
+            .panel .panel-footer,
+            .panel>:last-child {
+              border-bottom-left-radius: 0;
+              border-bottom-right-radius: 0;
+            }
+
+            .panel .panel-heading,
+            .panel>:first-child {
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+            }
+
+            .panel-body {
+              padding: 25px 20px;
+            }
+
+
+            .media-block .media-left {
+              display: block;
+              float: left
+            }
+
+            .media-block .media-right {
+              float: right
+            }
+
+            .media-block .media-body {
+              display: block;
+              overflow: hidden;
+              width: auto;
+              padding: 10px;
+            }
+
+            .middle .media-left,
+            .middle .media-right,
+            .middle .media-body {
+              vertical-align: middle
+            }
+
+            .thumbnail {
+              border-radius: 0;
+              border-color: #e9e9e9
+            }
+
+            .tag.tag-sm,
+            .btn-group-sm>.tag {
+              padding: 5px 10px;
+            }
+
+            .tag:not(.label) {
+              background-color: #fff;
+              padding: 6px 12px;
+              border-radius: 2px;
+              border: 1px solid #cdd6e1;
+              font-size: 12px;
+              line-height: 1.42857;
+              vertical-align: middle;
+              -webkit-transition: all .15s;
+              transition: all .15s;
+            }
+
+            .text-muted,
+            a.text-muted:hover,
+            a.text-muted:focus {
+              color: #acacac;
+            }
+
+            .text-sm {
+              font-size: 0.9em;
+            }
+
+            .text-5x,
+            .text-4x,
+            .text-5x,
+            .text-2x,
+            .text-lg,
+            .text-sm,
+            .text-xs {
+              line-height: 1.25;
+            }
+
+            .btn-trans {
+              background-color: transparent;
+              border-color: transparent;
+              color: #929292;
+            }
+
+            .btn-icon {
+              padding-left: 9px;
+              padding-right: 9px;
+            }
+
+            .btn-sm,
+            .btn-group-sm>.btn,
+            .btn-icon.btn-sm {
+              padding: 5px 10px !important;
+            }
+
+            .mar-top {
+              margin-top: 15px;
+            }
+
+            .btn-link {
+              font-weight: 800;
+              color: #000000;
+              text-decoration: none;
+            }
+            .img-sm {
+              border-radius: 50%;
+            }
+          </style>
+          <!--===================================================-->
+          <!-- End Newsfeed Content -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Main Content End-->
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="script.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+    <!--Bootstrap 4.0-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--Bootstrap 4.0 End-->
+</body>
+
+</html>

@@ -18,9 +18,6 @@ body{
 .custom-icon:hover {
   color: #74a8af !important;
 }
-.active{
-    color: #00acc1 !important;
-}
 .dropdown-item:active {
   background-color: #dbdbdb;
   color: #000000;
@@ -105,9 +102,13 @@ body{
 /* .side-bar{
   border: #000000 solid 3px;
 } */
-.profile-custom{
-  
+.profile-custom img {
+  border-radius: 10%;
 }
+.profile-c{
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.94);
+}
+
 @media only screen and (max-width: 950px) {
   .banner .content h1 {
     margin: 0;

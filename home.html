@@ -62,20 +62,20 @@
             </ul>
           </li>
         </ul>
-        
+
         <div class="px-2 mx-2 py-1 my-1">
           <div class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle custom-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-             aria-expanded="false">
-             <i class="far fa-user-circle fa-2x" style="color: #757373;"></i>
-           </a>
-           <ul class="dropdown-menu custom-icon" aria-labelledby="navbarDropdown">
-             <li>
-               <a class="dropdown-item custom-icon" href="pages/login.html">Log out</a>
-             </li>
-           </ul>
-         </div>
-       </div>
+            <a class="nav-link dropdown-toggle custom-icon" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="far fa-user-circle fa-2x" style="color: #757373;"></i>
+            </a>
+            <ul class="dropdown-menu custom-icon" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item custom-icon" href="pages/login.html">Log out</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
@@ -83,7 +83,7 @@
             Search
           </button>
         </form>
-        
+
       </div>
     </div>
   </nav>
@@ -94,22 +94,71 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
   <div class="container bootdey">
     <div class="col-md-12 bootstrap snippets">
+      <br>
+      <h4>#CryptoCurrency</h4>
+      <h1>Elon Musk Effect on Cryptocurreny? How Tesla CEO Moves Bitcoin, Dodgecoin with Just a Tweet</h1>
       <div class="panel">
         <div class="panel-body">
-          <textarea class="form-control" rows="2" placeholder="Answer"></textarea>
+          <!-- <textarea class="form-control" rows="2" placeholder="Answer"></textarea> -->
+
+          <textarea type="text" class="form-control" rows="2" placeholder="Answer" id="myInput"
+            placeholder="Enter text here..."></textarea>
           <div class="mar-top clearfix">
-            <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i>
-              Answer</button>
+            <!-- <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i>
+              Answer</button> -->
+
+            <span onclick="newElement()" class="addBtn"><button class="btn btn-sm btn-primary pull-right my-2"
+                type="submit"><i class="fa fa-pencil fa-fw"></i>
+                Answer</button></span>
+
             <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#"></a>
             <a class="btn btn-trans btn-icon fa fa-camera add-tooltip" href="#"></a>
             <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#"></a>
           </div>
         </div>
       </div>
+
+
+      <div class="media-block user-write">
+        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
+            src="assets/social-media-profiles/nunia.jpeg"></a>
+        <div class="media-body">
+          <div class="mar-btm">
+            <a href="#" class="btn-link text-semibold media-heading box-inline">Nunia</a>
+            <p class="text-muted text-sm"><i class="fa fa-mobile fa-lg"></i> - From Mobile - a min ago</p>
+          </div>
+
+
+          <div class="textarea">
+            <ul id="myUL">
+              <div id="myDT">
+    
+              </div>
+            </ul>
+          </div>
+
+
+          <div class="pad-ver">
+            <div class="btn-group">
+              <a class="btn btn-sm btn-default btn-hover-success" href="#"><i class="fa fa-thumbs-up"></i></a>
+              <a class="btn btn-sm btn-default btn-hover-danger" href="#"><i class="fa fa-thumbs-down"></i></a>
+            </div>
+            <a class="btn btn-sm btn-default btn-hover-primary" href="#">Comment</a>
+          </div>
+          <hr>
+
+
+
+
+      </div>
+
+
+
       <div class="panel">
         <div class="panel-body">
           <!-- Newsfeed Content -->
           <!--===================================================-->
+
           <div class="media-block">
             <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture"
                 src="assets/social-media-profiles/elon musk.jpg"></a>
@@ -237,6 +286,14 @@
           </div>
 
           <style>
+            .pad-ver .btn:active {
+              color: red;
+            }
+
+            .pad-ver .btn:focus {
+              color: red;
+            }
+
             .img-sm {
               width: 46px;
               height: 46px;
@@ -356,9 +413,57 @@
               color: #000000;
               text-decoration: none;
             }
+
             .img-sm {
               border-radius: 50%;
             }
+
+
+            .textarea ul li {
+              /* cursor: pointer; */
+
+              display: table;
+              margin-top: 15px;
+              margin-bottom: 18px;
+              /* padding-top: 18px;
+              padding-right: 20px;
+              padding-bottom: 18px; */
+              /* padding-left: 20px; */
+              list-style-type: none;
+              border-radius: 7px;
+              text-align: right;
+              /* background: #e8f1f3; */
+              margin-right: auto;
+              /* make the list items unselectable */
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              user-select: none;
+            }
+
+
+            .textarea {
+              width: 100% !important;
+            }
+
+            /* Clear floats after the header */
+            .header:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+
+            /* Style the input */
+            /* input {
+              margin: 0;
+              border: none;
+              border-radius: 0;
+              width: 75%;
+              padding: 10px;
+              float: left;
+              font-size: 16px;
+            } */
           </style>
           <!--===================================================-->
           <!-- End Newsfeed Content -->
@@ -366,6 +471,64 @@
       </div>
     </div>
   </div>
+
+  <script>
+    // Create a "close" button and append it to each list item
+    var myNodelist = document.getElementsByClassName("tomsg");
+    var i;
+    for (i = 0; i < myNodelist.length; i++) {
+      var span = document.createElement("SPAN");
+      var txt = document.createTextNode("\u00D7");
+      span.className = "close";
+      span.appendChild(txt);
+      myNodelist[i].appendChild(span);
+    }
+
+    // Click on a close button to hide the current list item
+    var close = document.getElementsByClassName("close");
+    var i;
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+
+
+
+    // Create a new list item when clicking on the "Add" button
+    function newElement() {
+      var li = document.createElement("li");
+      var inputValue = document.getElementById("myInput").value;
+      var t = document.createTextNode(inputValue);
+      // var today = new Date();
+      // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+      // var time = today.getHours() + ":" + today.getMinutes();
+      // var dateTime = time;
+      // var dt = document.createTextNode(dateTime);
+      // li.appendChild(dt);
+      li.appendChild(t);
+      if (inputValue === '') {
+        alert("You must write something!");
+      } else {
+        document.getElementById("myUL").appendChild(li);
+      }
+      document.getElementById("myInput").value = "";
+
+      // var span = document.createElement("SPAN");
+      // var txt = document.createTextNode("\u00D7");
+      // span.className = "close";
+      span.appendChild(txt);
+      li.appendChild(span);
+
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function () {
+          var div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
+    }
+  </script>
 
   <!--Main Content End-->
 
@@ -384,20 +547,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
     -->
-    <!--Bootstrap 4.0-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!--Bootstrap 4.0-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!--Bootstrap 4.0 End-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--Bootstrap 4.0 End-->
 </body>
 
 </html>

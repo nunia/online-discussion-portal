@@ -34,7 +34,8 @@
                                 class="fas fa-home fa-2x"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link custom-icon" href="../pages/profile.html"><i class="fas fa-user-circle fa-2x"></i></a>
+                        <a class="nav-link custom-icon" href="../pages/profile.html"><i
+                                class="fas fa-user-circle fa-2x"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link custom-icon" href="answer.html"><i class="fas fa-edit fa-2x"></i></a>
@@ -64,24 +65,24 @@
 
                 <div class="px-2 mx-2 py-1 my-1">
                     <div class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle custom-icon" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                       <i class="far fa-user-circle fa-2x" style="color: #757373;"></i>
-                     </a>
-                     <ul class="dropdown-menu custom-icon" aria-labelledby="navbarDropdown">
-                       <li>
-                         <a class="dropdown-item custom-icon" href="../pages/login.html">Log out</a>
-                       </li>
-                     </ul>
-                   </div>
-                 </div>
+                        <a class="nav-link dropdown-toggle custom-icon" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="far fa-user-circle fa-2x" style="color: #757373;"></i>
+                        </a>
+                        <ul class="dropdown-menu custom-icon" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item custom-icon" href="../pages/login.html">Log out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-secondary" type="submit">
                         Search
                     </button>
                 </form>
-                
+
             </div>
         </div>
     </nav>
@@ -187,37 +188,117 @@
                             <ul class="m-b-0">
                                 <li class="clearfix">
                                     <div class="message-data text-right">
-                                        <span class="message-data-time">10:10 AM, Today</span>
+                                        <span class="message-data-time">10:10 AM</span>
                                         <img src="../assets/social-media-profiles/nunia.jpeg" alt="avatar" />
                                     </div>
-                                    <div class="message other-message float-right">
+                                    <div class="message other-message float-right tomsg">
                                         Hi, how are you? And how is the project coming along?
                                     </div>
                                 </li>
                                 <li class="clearfix">
                                     <div class="message-data">
-                                        <span class="message-data-time">10:12 AM, Today</span>
+                                        <span class="message-data-time">10:12 AM</span>
                                     </div>
                                     <div class="message my-message">Are we having any meeting today?</div>
                                 </li>
                                 <li class="clearfix">
                                     <div class="message-data">
-                                        <span class="message-data-time">10:15 AM, Today</span>
+                                        <span class="message-data-time">10:15 AM</span>
                                     </div>
                                     <div class="message my-message">
                                         Project already ready and I have results to
                                         show you.
                                     </div>
+
                                 </li>
                             </ul>
                         </div>
                         <div class="chat-message clearfix">
                             <div class="input-group mb-0">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fa fa-send"
-                                            style="font: normal normal normal 14px/1.8 FontAwesome"></i></span>
+
                                 </div>
-                                <input type="text" class="form-control" placeholder="Enter text here..." />
+                                <!-- <input type="text" class="form-control" placeholder="Enter text here..." /> -->
+
+
+
+                                <div class="textarea">
+                                    <ul id="myUL">
+                                        <div id="myDT">
+
+                                        </div>
+
+                                    </ul>
+
+                                    <input type="text" id="myInput" placeholder="Enter text here...">
+                                    <span onclick="newElement()" class="addBtn"><i class="fa fa-send"
+                                            style="font: normal normal normal 14px/1.8 FontAwesome"></i></span>
+
+                                </div>
+
+                                <script>
+                                    // Create a "close" button and append it to each list item
+                                    var myNodelist = document.getElementsByClassName("tomsg");
+                                    var i;
+                                    for (i = 0; i < myNodelist.length; i++) {
+                                        var span = document.createElement("SPAN");
+                                        var txt = document.createTextNode("\u00D7");
+                                        span.className = "close";
+                                        span.appendChild(txt);
+                                        myNodelist[i].appendChild(span);
+                                    }
+
+                                    // Click on a close button to hide the current list item
+                                    var close = document.getElementsByClassName("close");
+                                    var i;
+                                    for (i = 0; i < close.length; i++) {
+                                        close[i].onclick = function () {
+                                            var div = this.parentElement;
+                                            div.style.display = "none";
+                                        }
+                                    }
+
+
+
+                                    // Create a new list item when clicking on the "Add" button
+                                    function newElement() {
+                                        var li = document.createElement("li");
+                                        var inputValue = document.getElementById("myInput").value;
+                                        var t = document.createTextNode(inputValue);
+                                        var today = new Date();
+                                        // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+                                        var time = today.getHours() + ":" + today.getMinutes();
+                                        var dateTime = time ;
+                                        var dt = document.createTextNode(dateTime);
+                                        li.appendChild(dt);
+                                        li.appendChild(t);
+                                        if (inputValue === '') {
+                                            alert("You must write something!");
+                                        } else {
+                                            document.getElementById("myDT").appendChild(dt);
+                                            document.getElementById("myUL").appendChild(li);
+                                        }
+                                        document.getElementById("myInput").value = "";
+
+                                        var span = document.createElement("SPAN");
+                                        var txt = document.createTextNode("\u00D7");
+                                        span.className = "close";
+                                        span.appendChild(txt);
+                                        li.appendChild(span);
+
+                                        for (i = 0; i < close.length; i++) {
+                                            close[i].onclick = function () {
+                                                var div = this.parentElement;
+                                                div.style.display = "none";
+                                            }
+                                        }
+                                    }
+                                </script>
+
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -226,6 +307,96 @@
         </div>
     </div>
     <!--Inbox End-->
+
+    <style>
+        /* Include the padding and border in an element's total width and height */
+        * {
+            box-sizing: border-box;
+        }
+
+        #myDT {
+            /* float: right !important; */
+            text-align: right;
+
+        }
+
+        /* Style the list items */
+        .textarea ul li {
+            cursor: pointer;
+
+            display: table;
+            margin-top: 15px;
+            margin-bottom: 18px;
+            padding-top: 18px;
+            padding-right: 20px;
+            padding-bottom: 18px;
+            padding-left: 20px;
+            list-style-type: none;
+            border-radius: 7px;
+            text-align: right;
+            background: #e8f1f3;
+            margin-left: auto;
+            /* make the list items unselectable */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Set all odd list items to a different color (zebra-stripes) */
+        .tomsg ul li:nth-child(odd) {
+            background: #f9f9f9;
+        }
+
+        /* Darker background-color on hover */
+        .tomsg ul li:hover {
+            background: #ddd;
+        }
+
+        .textarea {
+            width: 100% !important;
+        }
+
+
+
+
+
+        /* Clear floats after the header */
+        .header:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the input */
+        input {
+            margin: 0;
+            border: none;
+            border-radius: 0;
+            width: 75%;
+            padding: 10px;
+            float: left;
+            font-size: 16px;
+        }
+
+        /* Style the "Add" button */
+        .addBtn {
+            padding: 10px;
+            width: 25%;
+            background: #d9d9d9;
+            color: #555;
+            float: left;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 0;
+        }
+
+        .addBtn:hover {
+            background-color: #bbb;
+        }
+    </style>
 
     <style>
         .card {

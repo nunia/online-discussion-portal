@@ -13,7 +13,6 @@
     <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="../style.css" rel="stylesheet" />
-
     <title>Inbox</title>
 </head>
 
@@ -173,7 +172,7 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6 hidden-sm text-right">
-                                    <a href="javascript:void(0);" class="btn btn-outline-secondary"><i
+                                    <a href="javascript:void(0);" type="file" class="btn btn-outline-secondary"><i
                                             class="fa fa-camera"></i></a>
                                     <a href="javascript:void(0);" class="btn btn-outline-primary"><i
                                             class="fa fa-image"></i></a>
@@ -219,23 +218,16 @@
 
                                 </div>
                                 <!-- <input type="text" class="form-control" placeholder="Enter text here..." /> -->
-
-
-
                                 <div class="textarea">
                                     <ul id="myUL">
                                         <div id="myDT">
 
                                         </div>
-
                                     </ul>
-
                                     <input type="text" id="myInput" placeholder="Enter text here...">
                                     <span onclick="newElement()" class="addBtn"><i class="fa fa-send"
                                             style="font: normal normal normal 14px/1.8 FontAwesome"></i></span>
-
                                 </div>
-
                                 <script>
                                     // Create a "close" button and append it to each list item
                                     var myNodelist = document.getElementsByClassName("tomsg");
@@ -268,7 +260,7 @@
                                         var today = new Date();
                                         // var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
                                         var time = today.getHours() + ":" + today.getMinutes();
-                                        var dateTime = time ;
+                                        var dateTime = time;
                                         var dt = document.createTextNode(dateTime);
                                         li.appendChild(dt);
                                         li.appendChild(t);

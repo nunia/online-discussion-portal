@@ -13,10 +13,8 @@
   <link href="../fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet" />
   <!-- Custom CSS -->
   <link href="../style.css" rel="stylesheet" />
-
   <title>Notification</title>
 </head>
-
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav" style="background-color: #e3f2fd;">
@@ -137,7 +135,7 @@
   <!--Notifaction End-->
 
   <!--Notification-->
-  <ul class="nav nav-tabs my-2" id="myTab" role="tablist">
+  <ul class="nav nav-tabs my-4 mx-5" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
       <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
         aria-controls="home" aria-selected="true">All Notifications</button>
@@ -151,7 +149,7 @@
         aria-controls="contact" aria-selected="false">Comments and Mentions</button>
     </li>
   </ul>
-  <div class="tab-content" id="myTabContent">
+  <div class="tab-content my-4 mx-5" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action " aria-current="true">
@@ -264,7 +262,7 @@
           <small class="text-muted">Not viewed</small>
         </a>
 
-      
+
 
       </div>
     </div>
@@ -279,9 +277,11 @@
       background-color: #00acc1 !important;
       border-color: #00acc1 !important;
     }
+
+    .list-group-item {
+      border: 1px solid #007c91 !important;
+    }
   </style>
-
-
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -313,5 +313,4 @@
     crossorigin="anonymous"></script>
   <!--Bootstrap 4.0 End-->
 </body>
-
 </html>

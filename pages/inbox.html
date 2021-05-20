@@ -599,14 +599,25 @@
             height: 0;
         }
 
+
+
         @media only screen and (max-width: 767px) {
             .chat-app .people-list {
-                height: 465px;
-                width: 100%;
-                overflow-x: auto;
-                background: #fff;
-                left: -400px;
-                display: none;
+                display: block;
+                position: relative;
+            }
+            .people-list .chat-list li{
+                
+            }
+
+            .chat-app {  
+                display: block;
+                position: relative;
+            }
+
+            .chat-history {
+                display: inline-block;
+                position: relative;
             }
 
             .chat-app .people-list.open {

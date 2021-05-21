@@ -29,6 +29,9 @@ body{
     padding-right: 5px;
     padding-left: 5px;
 }
+.far:hover{
+  color: #000000 !important;
+}
 .form-control{
     border-radius: .9rem;
 }
@@ -38,9 +41,9 @@ body{
   border-radius: 12px;
   box-shadow: 1px 5px 9px 6px rgba(0,0,0,0.09);
 }
-.custom-button{
+/* .custom-button{
   
-}
+} */
 .btn-custom{
   position: absolute; 
   right: 0;
